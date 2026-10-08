@@ -1,8 +1,15 @@
 fn main() {
-    let x = plus_one(5);
-    println!("The value of x is {x}");
-}
+    let mut counter = 0;
 
-fn plus_one(num: i32) -> i32 {
-    num + 1
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+    let y = loop {
+        break 10;
+    };
+    println!("The result is {result}, and y is {y}");
 }
