@@ -1,1 +1,8 @@
-/target
+# Rust build output (any crate or workspace)
+**/target/
+
+# Backup files from rustfmt
+**/*.rs.bk
+
+# Debug symbol files (Windows/MSVC)
+*.pdb
